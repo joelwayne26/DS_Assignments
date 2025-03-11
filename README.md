@@ -36,7 +36,18 @@ Assignment2:Write a C program that accepts a group of N domestic animals and a g
        PRINT "After swapping:a= ,b= ",a,b <br/>
        
    END <br/>  <br/>
-       
+
+   ## 2) <br/> <br/>
+
+   Algorithm to push an item into a stack <br/>
+
+   step 1: Check if a stack is full: <br/>
+            If stack is full <br/>
+            PRINT "The stack is full" <br/>
+            return <br/>
+   step 2: Increment the top pointer: top ++ <br/>
+   step 3: Add an new item at the top position of the stack: stack[top]=item <br/>
+   step 4: Return Success: PRINT "ITEM PUSHED SUCCESSFULLY" <br/>   <br/>
 
     
        
