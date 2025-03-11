@@ -49,7 +49,15 @@ Assignment2:Write a C program that accepts a group of N domestic animals and a g
    step 3: Add an new item at the top position of the stack: stack[top]=item <br/>
    step 4: Return Success: PRINT "ITEM PUSHED SUCCESSFULLY" <br/>   <br/>
 
-    
+
+<br>
+<br>
+Screen shot for traversing an array
+<br>
+
+![image](https://github.com/user-attachments/assets/978533f4-2731-42d3-a9b5-189da3ad24f9)
+
+
        
        
        
