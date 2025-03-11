@@ -13,12 +13,36 @@ Assignment2:Write a C program that accepts a group of N domestic animals and a g
 
 ## 2) <br/>  <br/>
    **An algorithm that `swaps two numbers`.**  <br/>
-   step 1:Enter the first number and store it in a variable named a. <br/>
-   step 2:Enter the second number and store it in a variable named b. <br/>
+   step 1: Enter the first number and store it in a variable named a. <br/>
+   step 2: Enter the second number and store it in a variable named b. <br/>
    step 3: Declare a temprary variable c. <br/>
    step 4: Equate c to a ie c=a, then equate a to b ie a=b then equate d to c ie d = c. <br/>
 
-   **Pseudo code to swap two numbers.**
+   **Pseudo code to swap two numbers.**  <br/> <br/>
+   
+   START <br/>
+        // declare variables a,b and c. <br/>
+       DECLARE a, d ,c  <br/>
+       PRINT "Enter value for a:"  <br/>
+       INPUT a <br/>
+       PRINT "Enter value for b:" <br/>
+       INPUT b <br/>
+       PRINT "Before swapping: a= , b= ",a,b <br/>
+         //swapiing the two numbers <br/>
+       c=a <br/>
+       a=b <br/>
+       b=c <br/>
+       //printing results <br/>
+       PRINT "After swapping:a= ,b= ",a,b <br/>
+       
+   END <br/>  <br/>
+       
+
+    
+       
+       
+       
+   
    
    
     
