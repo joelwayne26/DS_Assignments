@@ -62,6 +62,72 @@ Screen shot for traversing an array
 ## 3) Determining the time complexity of an algorithm.<br/>
 ### linear time complexity
 <br/>
+This is C code where i have created an array of 4 items and printed out the first item of index 0. This is a demonstarion of constant time complexity using Big Oh notation.
+This is because the time required to extraxt any item located in an index n of the array is equal to the time reuired to extract the first item of the array
+#### code:
+#include <stdio.h>
+#include <time.h>
+
+ int main() {
+    // Declare an array of names and aliases
+    char *names[5] = {"Alice", "Bob", "Charlie", "David", "Eve"};
+    char *aliases[5] = {"Al", "Bobby", "Chuck", "Dave", "Evie"};
+    
+   clock_t start, end;
+   double time_taken;
+
+   // Measure O(1) - Accessing a specific element directly in an array
+   start = clock();
+   // Accessing an element at index 2 (constant time operation)
+   printf("The name at index 2 is: %s\n", names[2]);
+   end = clock();
+   time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+   printf("Time taken for O(1) operation: %f seconds\n", time_taken);
+  
+#### algotithm:
+
+1. Initialize an array of names.
+2. Iterate over the array from index 0 to the last index.
+3. Print each name.
+4. Measure the time taken for the operation.
+   
+O(n)
+<br>
+#### code:
+   start = clock();
+    for (int i = 0; i < 5; i++) {
+        printf("Name: %s\n", names[i]);
+    }
+    end = clock();
+    time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken for O(n) operation: %f seconds\n", time_taken);
+    <br/>
+    #### algotithm:
+
+1. Initialize an array of names.
+2. Iterate over the array from index 0 to the last index.
+3. Print each name.
+4. Measure the time taken for the operation.
+   <br/>
+   O(n2)
+   
+#### code:
+start = clock();
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            printf("Pair: %s, Alias: %s\n", names[i], aliases[j]);
+        }
+    }
+    end = clock();
+    time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken for O(n²) operation: %f seconds\n", time_taken);
+
+#### algotithm:
+1. Initialize two arrays: one for names and one for aliases.
+2. Iterate over the names array (outer loop).
+3. For each name, iterate over the aliases array (inner loop).
+4. Print all possible pairs of names and aliases.
+5. Measure the time taken for the operation.
 
 
 
@@ -75,4 +141,4 @@ Screen shot for traversing an array
     
 
 
-For more information please do not hesitate to get in touch with the ripo owner at joelssengendo1204@gmail.com 
+For more information please do not hesitate to get in touch with the ripo owner at joelssengendo.1204@gmail.com 
