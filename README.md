@@ -11,7 +11,7 @@ Assignment1:Write a C program that calculates the average of marks got by a stud
 Assignment2:Write a C program that accepts a group of N domestic animals and a group of X wild animals. Your program should print N + X animals after entering each group
 ![image](https://github.com/user-attachments/assets/4af0147f-57e8-49c8-a99c-bf44b337af45)
 
-## a) <br/>  <br/>
+### a) <br/>  <br/>
    i) <br/> **An algorithm that `swaps two numbers`.**  <br/>
    step 1: Enter the first number and store it in a variable named a. <br/>
    step 2: Enter the second number and store it in a variable named b. <br/>
@@ -37,7 +37,7 @@ Assignment2:Write a C program that accepts a group of N domestic animals and a g
        
    END <br/>  <br/>
 
-   ## b) <br/> <br/>
+   ### b) <br/> <br/>
 
    Algorithm to push an item into a stack <br/>
 
@@ -56,6 +56,14 @@ Screen shot for traversing an array
 <br>
 
 ![image](https://github.com/user-attachments/assets/978533f4-2731-42d3-a9b5-189da3ad24f9)
+
+<br/>
+<br/>
+## 3) Determining the time complexity of an algorithm.<br/>
+### linear time complexity
+<br/>
+
+
 
 
        
