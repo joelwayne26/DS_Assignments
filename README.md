@@ -59,12 +59,12 @@ Screen shot for traversing an array
 
 <br/>
 <br/>
-## 3) Determining the time complexity of an algorithm.<br/>
-### linear time complexity
+ 3) Determining the time complexity of an algorithm.<br/>
+ linear time complexity
 <br/>
 This is C code where i have created an array of 4 items and printed out the first item of index 0. This is a demonstarion of constant time complexity using Big Oh notation.<br/>
 This is because the time required to extraxt any item located in an index n of the array is equal to the time reuired to extract the first item of the array<br/><br/>
-#### code:<br/>
+ code:<br/>
 #include <stdio.h>
 #include <time.h>
 
@@ -84,7 +84,7 @@ This is because the time required to extraxt any item located in an index n of t
    time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;<br/>
    printf("Time taken for O(1) operation: %f seconds\n", time_taken);<br/><br/>
   
-#### algotithm:<br/>
+ algotithm:<br/>
 
 1. Initialize an array of names.<br/>
 2. Iterate over the array from index 0 to the last index.<br/>
@@ -93,7 +93,7 @@ This is because the time required to extraxt any item located in an index n of t
    
 O(n)<br/>
 <br>
-#### code:<br/>
+ code:<br/>
    start = clock();<br/>
     for (int i = 0; i < 5; i++) {<br/>
         printf("Name: %s\n", names[i]);<br/>
@@ -111,7 +111,7 @@ O(n)<br/>
    <br/><br/>
    O(n2)<br/>
    
-#### code:<br/>
+ code:<br/>
 start = clock();<br/>
     for (int i = 0; i < 5; i++) {<br/>
         for (int j = 0; j < 5; j++) {<br/>
@@ -122,7 +122,7 @@ start = clock();<br/>
     time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;<br/>
     printf("Time taken for O(n²) operation: %f seconds\n", time_taken);<br/>
 <br/>
-#### algotithm:<br/>
+ algotithm:<br/>
 1. Initialize two arrays: one for names and one for aliases.<br/>
 2. Iterate over the names array (outer loop).<br/>
 3. For each name, iterate over the aliases array (inner loop).<br/>
