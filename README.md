@@ -103,8 +103,8 @@ O(n)<br/>
         }
         print sum
     }
-```
-| Ops | Step | Frequency | Total Steps |
+
+   | Ops | Step | Frequency | Total Steps |
 | ----------- | ----------- | ----------- | ----------- |
 | sum = 0 | 1 | 1 | 1 |
 | i = 0 | 1 | 1 | 1 |
