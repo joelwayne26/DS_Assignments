@@ -122,7 +122,7 @@ The algorithm iterates an array and then adds up all even numbers in the array. 
 
 
    <br/><br/>
-   O(n2)<br/>
+   O(n^2)<br/>
    
  Algo sum(arr,size){
         for (i=0; i<size; i++){
@@ -142,7 +142,55 @@ The algorithm iterates an array and then adds up all even numbers in the array. 
 | print arr[i] arr[j] | 1 | n*n | n*n |
 |  |  |  | 5n^2 + 2  |
 
+Analyis:<br/>
+The outer loop runs size times.
+For each iteration of the outer loop, the inner loop runs size times.
+The print arr[i] arr[j] statement runs once per iteration of the inner loop.
 
+#### Example Three (Performing Binary Search)
+```
+    Algo sum(arr,size, target){
+        left = 0
+        right = size - 1
+        while(left <= right){
+            mid = (left + right) / 2
+
+            if (arr[mid] == target) {
+                return mid
+            }
+            else if (arr[mid] < target) {
+                left = mid + 1
+            }
+            else {
+                right = mid - 1
+            }
+        }
+        return -1
+    }
+```
+| Ops | Step | Frequency | Total Steps |
+| ----------- | ----------- | ----------- | ----------- |
+| left = 0 | 1 | 1 | 1 |
+| right = size - 1| 1 | 1 | 1 |
+| while(left <= right) | 1 | log n | log n |
+| mid = (left + right) / 2 | 1 | log n | log n |
+| arr[mid] == target | 1 | log n | log n |
+| return mid | 1 | 1 | 1 |
+| arr[mid] < target | 1 | log n | log n |
+| left = mid + 1 | 1 | log n | log n |
+| right = mid - 1 | 1 | log n | log n |
+| return -1 | 1 | 1 | 1 |
+|  |  |  | 6log n + 4 |
+
+### Analysis
+
+The algorithm performs a Binary Searcg to efficiently find the target value in a sorted array `arr` <br/>
+The mid value is gotten from ,mid=(left+right)/2<br/>
+The algorithm runs until the left is greater than the right.<br/>
+If arr[mid] == target, return mid (found).<br/>
+If arr[mid] < target, search the right half (left = mid + 1).<br/>
+If arr[mid] > target, search the left half (right = mid - 1).<br/>
+If Not Found, Return -1.<br/>
 
 
 
