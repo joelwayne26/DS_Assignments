@@ -14,10 +14,10 @@ Assignment2:Write a C program that accepts a group of N domestic animals and a g
 ### a) <br/>  <br/>
    i) <br/> **An algorithm that `swaps two numbers`.**  <br/>
    step 1:Declare the variables a,b and c.<br/>
-   step 1: Prompt the user for the first number and store it in a variable a. <br/>
-   step 2: Prompt the user the second number and store it in a variable named b. <br/>
-   step 3: 
-   step 4: Equate c to a ie c=a, then equate a to b ie a=b then equate d to c ie d = c. <br/>
+   step 2: Prompt the user for the first number and store it in a variable a. <br/>
+   step 3: Prompt the user the second number and store it in a variable named b. <br/>
+   step 4: Swap the values of a and b by assigning c to a , 
+   step 5: Equate c to a ie c=a, then equate a to b ie a=b then equate d to c ie d = c. <br/>
 
   ii) <br/> **Pseudo code to swap two numbers.**  <br/> <br/>
    
