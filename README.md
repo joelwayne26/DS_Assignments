@@ -74,10 +74,12 @@ This is because the time required to extraxt any item located in an index n of t
  
  algotithm:
  <br/>
-
+ 
+```
 Alg Multi(a,b){
 product=a*b <br/>
 print (product) <br/>
+```
 }
 <br/>
 | Ops | Step | Frequency | Total Steps |
@@ -94,6 +96,7 @@ The multiplication step has a frequency of 1 and the print step has a frequency 
    
 O(n)<br/>
 <br>
+```
  Algo sum(arr,size){
         sum = 0
         for (i=0; i<size; i++){
@@ -103,7 +106,7 @@ O(n)<br/>
         }
         print sum
     }
-
+```
    | Ops | Step | Frequency | Total Steps |
 | ----------- | ----------- | ----------- | ----------- |
 | sum = 0 | 1 | 1 | 1 |
@@ -118,19 +121,17 @@ O(n)<br/>
 ### Analyis
 The algorithm iterates an array and then adds up all even numbers in the array. This is a O(n) time complexity because we focus on the worst time complexity of the algorithm since here, even the odd numbers will be iterated so as to get the worst time complexity.<br/>
 
-
-
-
    <br/><br/>
    O(n^2)<br/>
-   
- Algo sum(arr,size){
-        for (i=0; i<size; i++){
-            for(j=0; j<size; j++){
-                print arr[i] arr[j]
-            }
-        }
-    }
+   ```
+ Algo sum(arr,size){ <br/>
+        for (i=0; i<size; i++){<br/>
+            for(j=0; j<size; j++){<br/>
+                print arr[i] arr[j]<br/>
+            }<br/>
+        }<br/>
+    }<br/>
+```
 | Ops | Step | Frequency | Total Steps |
 | ----------- | ----------- | ----------- | ----------- |
 | i = 0 | 1 | 1 | 1 |
@@ -149,24 +150,24 @@ The print arr[i] arr[j] statement runs once per iteration of the inner loop.
 
 #### Example Three (Performing Binary Search)
 ```
-    Algo sum(arr,size, target){
-        left = 0
-        right = size - 1
-        while(left <= right){
-            mid = (left + right) / 2
+    Algo sum(arr,size, target){<br/>
+        left = 0<br/>
+        right = size - 1<br/>
+        while(left <= right){<br/>
+            mid = (left + right) / 2<br/>
 
-            if (arr[mid] == target) {
-                return mid
-            }
-            else if (arr[mid] < target) {
-                left = mid + 1
-            }
-            else {
-                right = mid - 1
-            }
-        }
-        return -1
-    }
+            if (arr[mid] == target) {<br/>
+                return mid<br/>
+            }<br/>
+            else if (arr[mid] < target) {<br/>
+                left = mid + 1<br/>
+            }<br/>
+            else {<br/>
+                right = mid - 1<br/>
+            }<br/>
+        }<br/>
+        return -1<br/>
+    }<br/>
 ```
 | Ops | Step | Frequency | Total Steps |
 | ----------- | ----------- | ----------- | ----------- |
