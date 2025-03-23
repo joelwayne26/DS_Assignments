@@ -13,11 +13,14 @@ Assignment2:Write a C program that accepts a group of N domestic animals and a g
 
 ### a) <br/>  <br/>
    i) <br/> **An algorithm that `swaps two numbers`.**  <br/>
+   
+   START
    step 1:Declare the variables a,b and c.<br/>
    step 2: Prompt the user for the first number and store it in a variable a. <br/>
    step 3: Prompt the user the second number and store it in a variable named b. <br/>
-   step 4: Swap the values of a and b by assigning c to a , 
-   step 5: Equate c to a ie c=a, then equate a to b ie a=b then equate d to c ie d = c. <br/>
+   step 4: Swap the values of a and b by assigning c to a , assign b to c and then assign a to b.<br/> 
+   step 5: Print the values of a and b.<br/>
+   STOP
 
   ii) <br/> **Pseudo code to swap two numbers.**  <br/> <br/>
    
@@ -28,27 +31,29 @@ Assignment2:Write a C program that accepts a group of N domestic animals and a g
        INPUT a <br/>
        PRINT "Enter value for b:" <br/>
        INPUT b <br/>
-       PRINT "Before swapping: a= , b= ",a,b <br/>
+       PRINT "Before swapping: a= , b= "<br/>
          //swapiing the two numbers <br/>
        c=a <br/>
        a=b <br/>
        b=c <br/>
        //printing results <br/>
-       PRINT "After swapping:a= ,b= ",a,b <br/>
+       PRINT "After swapping:a= ,b= "<br/>
        
    END <br/>  <br/>
 
    ### b) <br/> <br/>
 
    Algorithm to push an item into a stack <br/>
-
+START
    step 1: Check if a stack is full: <br/>
             If stack is full <br/>
             PRINT "The stack is full" <br/>
-            return <br/>
+            go to END
+            else:
    step 2: Increment the top pointer: top ++ <br/>
    step 3: Add an new item at the top position of the stack: stack[top]=item <br/>
    step 4: Return Success: PRINT "ITEM PUSHED SUCCESSFULLY" <br/>   <br/>
+END
 
 
 <br>
@@ -66,31 +71,18 @@ Screen shot for traversing an array
 This is C code where i have created an array of 4 items and printed out the first item of index 0. This is a demonstarion of constant time complexity using Big Oh notation.<br/>
 This is because the time required to extraxt any item located in an index n of the array is equal to the time reuired to extract the first item of the array<br/><br/>
  code:<br/>
-#include <stdio.h>
-#include <time.h>
-
- int main() {<br/>
-    // Declare an array of names and aliases<br/>
-    char *names[5] = {"Alice", "Bob", "Charlie", "David", "Eve"};<br/>
-    char *aliases[5] = {"Al", "Bobby", "Chuck", "Dave", "Evie"};<br/><br/>
-    
-   clock_t start, end;<br/>
-   double time_taken;<br/>
-
-   // Measure O(1) - Accessing a specific element directly in an array<br/>
-   start = clock();<br/>
-   // Accessing an element at index 2 (constant time operation)<br/>
-   printf("The name at index 2 is: %s\n", names[2]);<br/>
-   end = clock();<br/>
-   time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;<br/>
-   printf("Time taken for O(1) operation: %f seconds\n", time_taken);<br/><br/>
-  
+ 
  algotithm:<br/>
 
-1. Initialize an array of names.<br/>
-2. Iterate over the array from index 0 to the last index.<br/>
-3. Print each name.<br/>
-4. Measure the time taken for the operation.<br/><br/>
+Alg(a){
+a+=1
+print (a)
+}
+| Ops | Step | Frequency | Total Steps |
+| ----------- | ----------- | ----------- | ----------- |
+| a = a + 1 | 1 | 1 | 1 |
+| print a | 1 | 1 | 1 |
+|  |  |  | 2  |
    
 O(n)<br/>
 <br>
