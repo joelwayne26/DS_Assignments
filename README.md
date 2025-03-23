@@ -72,55 +72,76 @@ This is C code where i have created an array of 4 items and printed out the firs
 This is because the time required to extraxt any item located in an index n of the array is equal to the time reuired to extract the first item of the array<br/><br/>
  code:<br/>
  
- algotithm:<br/>
+ algotithm:
+ <br/>
 
-Alg(a){
-a+=1
-print (a)
+Alg Multi(a,b){
+product=a*b <br/>
+print (product) <br/>
 }
+<br/>
 | Ops | Step | Frequency | Total Steps |
 | ----------- | ----------- | ----------- | ----------- |
-| a = a + 1 | 1 | 1 | 1 |
-| print a | 1 | 1 | 1 |
+| product=a*b | 1 | 1 | 1 |
+| print(product) | 1 | 1 | 1 |
 |  |  |  | 2  |
+
+### Analysis<br/>
+
+The algorithm is used to multiply two variables a and b and then prints the product.<br/>
+Frequency is the number of times a step runs.<br/>
+The multiplication step has a frequency of 1 and the print step has a frequency of 1.<br/>
    
 O(n)<br/>
 <br>
- code:<br/>
-   start = clock();<br/>
-    for (int i = 0; i < 5; i++) {<br/>
-        printf("Name: %s\n", names[i]);<br/>
-    }<br/>
-    end = clock();<br/>
-    time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;<br/>
-    printf("Time taken for O(n) operation: %f seconds\n", time_taken);<br/>
-    <br/><br/>
-    #### algotithm:<br/>
+ Algo sum(arr,size){
+        sum = 0
+        for (i=0; i<size; i++){
+            if(arr[i] is even){
+                sum += arr[i]
+            }
+        }
+        print sum
+    }
+```
+| Ops | Step | Frequency | Total Steps |
+| ----------- | ----------- | ----------- | ----------- |
+| sum = 0 | 1 | 1 | 1 |
+| i = 0 | 1 | 1 | 1 |
+| i < size | 1 | n | n |
+| i++ | 1 | n | n |
+| arr[i] is even | 1 | n | n |
+| sum += arr[i] | 1 | n | n |
+| print sum | 1 | 1 | 1 |
+|  |  |  | 4n + 3 |
 
-1. Initialize an array of names.<br/>
-2. Iterate over the array from index 0 to the last index.<br/>
-3. Print each name.<br/>
-4. Measure the time taken for the operation.<br/>
+### Analyis
+The algorithm iterates an array and then adds up all even numbers in the array. This is a O(n) time complexity because we focus on the worst time complexity of the algorithm since here, even the odd numbers will be iterated so as to get the worst time complexity.<br/>
+
+
+
+
    <br/><br/>
    O(n2)<br/>
    
- code:<br/>
-start = clock();<br/>
-    for (int i = 0; i < 5; i++) {<br/>
-        for (int j = 0; j < 5; j++) {<br/>
-            printf("Pair: %s, Alias: %s\n", names[i], aliases[j]);<br/>
-        }<br/>
-    }<br/>
-    end = clock();<br/>
-    time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;<br/>
-    printf("Time taken for O(n²) operation: %f seconds\n", time_taken);<br/>
-<br/>
- algotithm:<br/>
-1. Initialize two arrays: one for names and one for aliases.<br/>
-2. Iterate over the names array (outer loop).<br/>
-3. For each name, iterate over the aliases array (inner loop).<br/>
-4. Print all possible pairs of names and aliases.<br/>
-5. Measure the time taken for the operation.<br/>
+ Algo sum(arr,size){
+        for (i=0; i<size; i++){
+            for(j=0; j<size; j++){
+                print arr[i] arr[j]
+            }
+        }
+    }
+| Ops | Step | Frequency | Total Steps |
+| ----------- | ----------- | ----------- | ----------- |
+| i = 0 | 1 | 1 | 1 |
+| i < size | 1 | n*n | n*n |
+| i++ | 1 | n*n | n*n |
+| j = 0 | 1 | 1 | 1 |
+| j < size | 1 | n*n | n*n |
+| j++ | 1 | n*n | n*n |
+| print arr[i] arr[j] | 1 | n*n | n*n |
+|  |  |  | 5n^2 + 2  |
+
 
 
 
