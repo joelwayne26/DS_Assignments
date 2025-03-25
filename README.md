@@ -196,9 +196,13 @@ If Not Found, Return -1.<br/>
 
 
 ### Screen shot for stack_push
+<br/>
 ![image](https://github.com/user-attachments/assets/5ec44d6a-bfb0-4c57-bf56-45abd733576e)
-       
-       
+
+### Screen shot for stack_pop
+       <br/>
+ ![image](https://github.com/user-attachments/assets/5a00c5ea-7f1a-468c-bd81-2d7ff9abe492)
+
    
    
    
