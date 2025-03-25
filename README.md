@@ -195,7 +195,8 @@ If Not Found, Return -1.<br/>
 
 
 
-       
+### Screen shot for stack_push
+![image](https://github.com/user-attachments/assets/5ec44d6a-bfb0-4c57-bf56-45abd733576e)
        
        
    
