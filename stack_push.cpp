@@ -80,4 +80,4 @@ int main()
   friends_stack.display();
   return 0;
 
-}
+} //screen shot of the results is in the readme file
