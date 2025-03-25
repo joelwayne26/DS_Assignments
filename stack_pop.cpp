@@ -57,7 +57,7 @@ int main()
 {
     Stack friends_stack;
 
-    // Hardcoded data
+    // pushing items into the stack
     friends_stack.push("Alice");
     friends_stack.push("Bob");
     friends_stack.push("Charlie");
@@ -77,3 +77,4 @@ int main()
 
     return 0;
 }
+// screen shot for results is in the read me file
